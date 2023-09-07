@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Images/icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <script src="https://kit.fontawesome.com/1c89e89dde.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <a href="#">S<span>aurabh</span></a>
+        </div>
+        <ul id="sidemenu" class="nav">
+            <li><a href="#header" class="active activated" onclick="activate('header')">Home</a></li>
+            <li><a href="#about" class="active" onclick="activate('header')">About</a></li>
+            <li><a href="#services" class="active" onclick="activate('services')">Services</a></li>
+            <li><a href="#portfolio" class="active" onclick="activate('portfolio')">Projects</a></li>
+            <li><a href="#contact" class="active" onclick="activate('contact')">Contact</a></li>
+            <i class="fas fa-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fas fa-bars" onclick="openmenu()"></i>
+    </div>
+    <section id="header">
+        <div class="container row">
+            <!-- <div class="navbar">
+                <div class="logo">
+                    <a href="#">S<span>aurabh</span></a>
+                </div>
+                <ul id="sidemenu" class="nav">
+                    <li><a href="#header" class="active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </div> -->
+            <div class="header-text column1">
+                <h1>Hello, I'm<br> <span>Saurabh Raj</span></h1>
+                <p><span class="auto-input"></span></p>
+                <a href="" download class="btn">Download CV</a>
+            </div>
+            <div class="column2">
+                <img src="Images/gear5.png" alt="Loading...">
+            </div>
+        </div>
+    </section>
+    <!-- -------------------about-------------- -->
+
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col1">
+                    <img src="Images/monkey.png" alt="Loading...">
+                </div>
+                <div class="col2">
+                    <h1 calss="sub-title">About Me</h1>
+                    <p>Hello, I'm Saurabh Raj. I'm currently pursuing a B.Tech degree in Electrical Engineering at Indian Institute of Technology, Bhilai.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience
+                        <p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>HTML, CSS, Java Script</li>
+                            <li><span>Machine Learning</span><br>Regression, Classification, Neural Networks,
+                                Reinforcement learning</li>
+                            <li><span>Programming Languages</span><br>C, C++, Python</li>
+                            <li><span>Libraries</span><br>numpy, pandas, Sklearn, Tensorflow</li>
+                            <li><span>Tools and Frameworks</span><br>Matlab, Latex, SQL</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Summer Internship at Fuselage Innovations Pvt Ltd. [26th May 2023- 26th July 2023]</span><br> Given the task of redesigning the user interface of Mission Planner software which is an open-source software in such a
+                                way that it reflects Fuselage Innovations company’s identity and does not contain any traces of the previous software’s
+                                logo or interface data.
+                                <br> Blocked the update of user interface whenever update comes. <br> Learned skill like debugging as I was getting around 300 errors in my first week of internship and learned how to use
+                                Visual Studio properly.
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2020-2024</span><br>B.Tech from Indian Institute Of Technology, Bhilai</li>
+                            <li><span>2019</span><br>Senior Secondary from CBSE Board</li>
+                            <li><span>2017</span><br>Secondary from UP Board</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- --------------services--------------- -->
+    <section id="services">
+        <div class="container">
+            <h1>My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i><i class="fa-sharp fa-solid fa-code"></i></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam totam, veniam iure sapiente non
+                        cumque corporis, amet aliquid earum nostrum tempore a quod sint. Odit consequuntur magnam
+                        aperiam ducimus iusto?</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i><i class="fa-solid fa-crop-simple"></i></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam totam, veniam iure sapiente non
+                        cumque corporis, amet aliquid earum nostrum tempore a quod sint. Odit consequuntur magnam
+                        aperiam ducimus iusto?</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i><i class="fa-brands fa-app-store-ios"></i></i>
+                    <h2>App Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam totam, veniam iure sapiente non
+                        cumque corporis, amet aliquid earum nostrum tempore a quod sint. Odit consequuntur magnam
+                        aperiam ducimus iusto?</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- -------------------portfolio-------------     -->
+    <section id="portfolio">
+        <div class="container">
+            <h1>My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="Images/pong.jpg" alt="...">
+                    <div class="layer">
+                        <h3>Ping Pong Game</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis iste delectus ipsa
+                            sunt consectetur laborum.</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/card.jpeg" alt="...">
+                    <div class="layer">
+                        <h3>Card Game</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis iste delectus ipsa
+                            sunt consectetur laborum.</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/ml.jpg" alt="...">
+                    <div class="layer">
+                        <h3>Machine Learning Projects</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis iste delectus ipsa
+                            sunt consectetur laborum.</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- --------------contact------------- -->
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="left">
+                    <h1>Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>rajsaurabh@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>9870326659</p>
+                    <div class="s-icon">
+                        <a href="https://www.facebook.com/profile.php?id=100032944092106" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/im_saurabhraj/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/saurabh-raj-001998200/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Enter Your Name" required>
+                        <input type="email" name="Email" placeholder="Enter Your Email" required>
+                        <textarea name="Message" rows="5" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <div class="copy-right">
+        <p>Copyright <span>&#169</span> Saurabh Raj</p>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typed = new Typed(".auto-input", {
+            strings: ["Web Developer", "ML Enthusiast"],
+            typeSpeed: 100,
+            backSpeed: 100,
+            loop: true
+        })
+    </script> 
+
+    <!-- <script type="text/javascript">
+        window.addEventListener("scroll",function(){
+            var header=document.querySelector("header");
+            header.classList.toggle("sticky",window.scrollY > 0);
+        })
+    </script> -->
+</body>
+
+</html>
